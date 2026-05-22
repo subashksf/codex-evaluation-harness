@@ -6,15 +6,19 @@ The harness is organized around layered Codex rollout. Each layer should produce
 
 ## Rollout Layers
 
-| Layer | Name | Evaluation Focus |
-|---|---|---|
-| 0 | Governance and repo readiness | Whether a repository is mature and safe enough for Codex usage. |
-| 1 | Read-only codebase Q&A | Whether Codex can explain the codebase accurately for onboarding and discovery. |
-| 2 | Human-guided code drafting | Whether Codex can draft snippets, tests, docs, and refactors before direct repo modification. |
-| 3 | Assisted implementation | Whether Codex can make scoped code changes in a branch or worktree. |
-| 4 | PR review assistance | Whether Codex can identify useful review findings without excessive noise. |
-| 5 | Agentic PR creation | Whether Codex can complete tasks and open PRs for human review. |
-| 6 | Scaled automation | Whether Codex can perform repeatable multi-repo automation with guardrails. |
+The layer IDs are the canonical vocabulary for scenarios, scorecards, policy gates, reports, and future Python types.
+
+| Layer | ID | Name | Evaluation Focus |
+|---|---|---|---|
+| 0 | `LAYER_0_GOVERNANCE_REPO_READINESS` | Governance and repo readiness | Whether a repository is mature and safe enough for Codex usage. |
+| 1 | `LAYER_1_READ_ONLY_CODEBASE_QA` | Read-only codebase Q&A | Whether Codex can explain the codebase accurately for onboarding and discovery. |
+| 2 | `LAYER_2_HUMAN_GUIDED_CODE_DRAFTING` | Human-guided code drafting | Whether Codex can draft snippets, tests, docs, and refactors before direct repo modification. |
+| 3 | `LAYER_3_ASSISTED_IMPLEMENTATION` | Assisted implementation | Whether Codex can make scoped code changes in a branch or worktree. |
+| 4 | `LAYER_4_PR_REVIEW_ASSISTANCE` | PR review assistance | Whether Codex can identify useful review findings without excessive noise. |
+| 5 | `LAYER_5_AGENTIC_PR_CREATION` | Agentic PR creation | Whether Codex can complete tasks and open PRs for human review. |
+| 6 | `LAYER_6_SCALED_AUTOMATION` | Scaled automation | Whether Codex can perform repeatable multi-repo automation with guardrails. |
+
+Detailed layer definitions live in `docs/layers.md`. The initial machine-readable layer registry lives in `configs/policies/layers.yaml`.
 
 ## Operating Model
 

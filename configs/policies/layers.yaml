@@ -1,0 +1,31 @@
+schema_version: 1
+description: Canonical Codex rollout layer registry.
+layers:
+  LAYER_0_GOVERNANCE_REPO_READINESS:
+    index: 0
+    name: Governance and repo readiness
+    evaluation_focus: Determine whether a repository is safe and mature enough for Codex usage.
+  LAYER_1_READ_ONLY_CODEBASE_QA:
+    index: 1
+    name: Read-only codebase Q&A
+    evaluation_focus: Evaluate Codex as a codebase explanation and onboarding assistant.
+  LAYER_2_HUMAN_GUIDED_CODE_DRAFTING:
+    index: 2
+    name: Human-guided code drafting
+    evaluation_focus: Evaluate Codex-generated snippets, tests, docs, and refactors before direct repo modification.
+  LAYER_3_ASSISTED_IMPLEMENTATION:
+    index: 3
+    name: Assisted implementation
+    evaluation_focus: Evaluate Codex making scoped code changes in a branch or worktree.
+  LAYER_4_PR_REVIEW_ASSISTANCE:
+    index: 4
+    name: PR review assistance
+    evaluation_focus: Evaluate Codex as a pull request reviewer.
+  LAYER_5_AGENTIC_PR_CREATION:
+    index: 5
+    name: Agentic PR creation
+    evaluation_focus: Evaluate Codex implementing tasks and opening pull requests for human review.
+  LAYER_6_SCALED_AUTOMATION:
+    index: 6
+    name: Scaled automation
+    evaluation_focus: Evaluate Codex performing repeatable multi-repo automation with guardrails.

@@ -1,6 +1,6 @@
 .PHONY: install format lint typecheck test ci
 
-PYTHON ?= python3.11
+PYTHON ?= python3
 VENV ?= .venv
 VENV_PYTHON := $(VENV)/bin/python
 
