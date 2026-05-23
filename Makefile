@@ -23,4 +23,4 @@ typecheck:
 test:
 	$(VENV_PYTHON) -m pytest
 
-ci: format lint typecheck test
+ci: lint typecheck test
